@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vive Outdoors te presenta todo el equipo outdoors que necesitas para tu proxima salida de treeking, kayak,playa o camping descubrelo aca">
+		<meta name="keywords" content="articulos de camping, outdoors, silla plegable, silla playera, equipo para montaña, kayak, equipamiento y articulos de montaña, treeking">
+    <link rel="icon" type="image/svg" href="imagenes/isologo.svg">
+    <!-- <meta name="author" content="Colocar Linkedin, pagina o red social"> CUANDO LA ACTUALICE -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <title>Contacto - Vive outdoors</title>
+</head>
+<body>
+  <header class="header">
+    <a href="../index.html"><img src="../imagenes/logoVive.png" alt="logo"  class="header__logo wow bounceInLeft"></a>
+    <h1 class="header__h1 wow bounceInRight ">Articulos outdoors</h1>
+    <nav class="header__menu navbar navbar-expand-lg navbar-light bg-light" id="menu">
+        <div class="header__div container d-flex justify-content-end">
+            <button class="header__boton navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="header__divChico collapse navbar-collapse" id="navbarSupportedContent" >
+              <ul class="header__botonera navbar-nav m-auto mb-2 mb-lg-0 text-end">
+                <li class="header__li nav-item">
+                  <a class="header__a " href="../paginas/quienesSomos.html">Quienes somos</a>
+                </li>
+                <li class="header__li nav-item dropdown">
+                  <a class="header__a " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                  </a>
+                  <ul class="header__dropdown dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="header__li" ><a class="header__a dropdown-item" id="a__botonera" href="../paginas/sillas.html">Sillas Plegables</a></li>
+                    <li class="header__li" ><a class="header__a dropdown-item" id="a__botonera" href="../paginas/portas.html">Portas VHF</a></li>
+                  </ul>
+                </li>
+                <li class="header__li nav-item">
+                  <a class="header__a" href="../paginas/ofertas.html" >Ofertas</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+    
+    <main class="mainContacto container">
+        <div class="mainContacto__divContacto row justify-content-center align-items-center my-lg-4 p-3 mt-2 border border-2">
+            <section class="mainContacto__section col-12 col-md-6">
+              <div class="mainContacto__datos row justify-content-center">
+                <div  class="mainContacto__divlogo col-12 col-lg-6 p-3">
+                  <img src="../imagenes/logofooter.png" alt="Logo de Vive" id="logoForm" class="mainContacto__logoimg w-50 m-auto d-block">
+                </div>
+                <div class="mainContacto__divinfo col-12 col-lg-6">
+                  <p class="mainContacto__titulos">Direccion </p>
+                  <p>Av. siempreviva 123</p>
+                  <p class="mainContacto__titulos">Horarios de atencion</p>
+                   <p>de 9 a 12 o de 15 a 18 </p>
+                  <p class="mainContacto__titulos">Telefono</p>
+                  <p>3487-309663</p>
+                  <p class="mainContacto__titulos">Mail</p>
+                  <p>info@viveoutdoors.com</p>
+                </div>
+              </div>
+            </section>
+            <form action="" method="POST" id="form" class=" mainContacto__form col-12 col-md-6">
+              <label for="name" class="mainContacto__label">Nombre y Apellido</label>
+              <input type="text" placeholder="Juan Perez" name="name" class="mainContacto__input">
+              <br>
+              <label for="sexo" class="mainContacto__label">Sexo:</label>
+              <select name="sexo" id="" class="mainContacto__select">
+                  <option value="masc">Masculino</option>
+                  <option value="fem">Femenino</option>
+              </select>
+              <br>
+              <label for="email" class="mainContacto__label">Mail</label>
+              <input type="email" name="email"    placeholder="nombre@mail.com" class="mainContacto__input">
+              <br>
+              <label for="celu" class="mainContacto__label">Celular</label>
+              <input type="number" name="celu" class="mainContacto__input">
+              <br>
+              <label for="message" class="mainContacto__label">Dejanos aqui tu consulta:</label>
+              <br>
+              <div class="form-floating p-0 m-0 border-0" >
+                <textarea class="form-control p-0 m-0" placeholder="Dejanos aca tu comentario/consulta" id="floatingTextarea2" style="height: 100px" name="message" class="mainContacto__txtarea"></textarea>
+              </div>                  
+              <br>
+              <fieldset class="mainContacto__fieldset">
+                  <legend>Contanos como nos conociste...</legend>
+                  <input type="checkbox"name="contanos" value="Amigos" id="friends" class="mainContacto__input"/>
+                  <label for="friends" class="mainContacto__label">Amigos</label>
+                  <br>                
+                  <input type="checkbox"name="contanos"value="Instagram" id="insta" class="mainContacto__input"/>
+                  <label for="insta" class="mainContacto__label">Instagram</label>
+                  <br>            
+                  <input type="checkbox"name="contanos" value="facebook" id="face" class="mainContacto__input"/>
+                  <label for="face" class="mainContacto__label">Facebook</label>  
+                  <br>
+                  <input type="checkbox"name="contanos" value="outdoors" id="outd" class="mainContacto__input"/>
+                  <label for="outd" class="mainContacto__label">En una salida outdoors</label>  
+              </fieldset>      
+              <input type="reset"value="Borrar Formulario" class="mainContacto__boton"/>
+              <input type="submit"value="Enviar Formulario" class="mainContacto__boton"/>
+            </form>
+        </div> 
+           <!--Proximo article reciclado del home-->
+           <article class="mainHome__destacadas wow bounceInUp container row m-auto">
+            <h3 class="mainHome__h3 py-3">DESTACADAS</h3>
+            <div class="mainHome__divDestacadas row m-auto ">
+              <div class="col-6 col-md-3 imgdes1 ">
+                <img src="../imagenes/desta1.png" alt="Producto destacado Nº1, Silla fucsia y negro" class="mainHome__imgDestacadas w-100 p-2">
+              </div>
+              <div class="col-6 col-md-3 imgdes2 ">
+                <img src="../imagenes/desta2.png" alt="Producto destacado Nº2, Silla camuflada roja" class="mainHome__imgDestacadas w-100 p-2">
+              </div>
+              <div class="col-6 col-md-3 imgdes3 ">
+                <img src="../imagenes/desta3.png" alt="Producto destacado Nº3, silla verde militar" class="mainHome__imgDestacadas w-100 p-2">
+              </div>
+              <div class="col-6 col-md-3 imgdes4 ">
+                <img src="../imagenes/desta4.png" alt="Producto destacado Nº4, pechera con detalle en azul" class="mainHome__imgDestacadas w-100 p-2">
+              </div>
+            </div>
+         
+        </article>
+    </main>
+
+    <footer class="container-fluid m-auto footer row justify-content-center p-4 text-center text-md-start">
+      <div class="footer__div col-md-3 p-2">
+        <img class="footer__logo d-block m-auto p-4 " src="../imagenes/logofooter.png" alt="logo de pie de pagina"  >
+      </div>
+      <div class="footer__div col-md-3 p-2" >
+          <p class="footer__tituFooter"><strong>CONTACTO</strong></p>
+          <p class="footer__info">Whats App +54-3487-309663</p>
+          <p class="footer__info">Av. siempreviva 123</p>
+          <p class="footer__info">LUN a VIE | 9 a 12 y/o de 15 a 18 </p>
+          <p class="footer__info">info@viveoutdoors.com</p>
+          <div class="footer__iconos">
+            <a href="https://www.facebook.com/vive.outdoor" target="_blank"><div class="facebook d-inline-block me-md-2 mx-2 "></div></a>
+            <a href="https://www.instagram.com/vive.outdoors/" target="_blank"><div class="instagram d-inline-block me-md-2 mx-2 "></div></a>
+            <div class="whatsapp d-inline-block me-md-2 mx-2 "></div>
+
+          </div>
+      </div>
+      <div class="footer__div col-md-3 p-2">
+          <p class="footer__tituFooter"> <strong>MEDIOS DE PAGO</strong> </p>
+          <p class="footer__info">Transferencia bancaria </p>
+          <p class="footer__info">Mercado Pago</p>
+          <img src="../imagenes/mp.png" alt="icon de Mercado Pago" class="footer__mp">
+      </div>  
+      <div class="footer__div col-md-3 p-2">
+          <p class="footer__tituFooter"><strong>CONSULTAS</strong></p>
+          <p class="footer__info">Click en el sobre </p>
+          <a class="footer__sobre w-100 m-auto" href="../paginas/contacto.html">
+            <img class="d-md-block rounded " src="../imagenes/iconsobre.png" alt="icono para clickear e ir a consultas" >
+          </a>
+      </div>    
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>

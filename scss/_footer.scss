@@ -1,0 +1,41 @@
+.footer  {
+    color: white;
+    background:rgba(0, 0, 0, 0.8);
+
+    .footer__logo{
+         width: 10em;
+    }
+    .footer__tituFooter{
+        text-shadow: 1px 1px 2px white;
+    }
+    .footer__mp{
+        width: 150px;
+        background-color: rgba(169, 169, 169, 0.425);
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    .footer__sobre{
+        img{
+            width: 6em;
+            padding: 1px 10px;
+            background-color: rgba(169, 169, 169, 0.425);
+        }
+    }
+}
+
+/*--------------------------- Media query ---------------------------*/
+
+
+@each $icon in facebook, whatsapp, instagram{
+    .#{$icon}{
+        background-image: url(../imagenes/#{$icon}-icon.png);
+        background-size: 100%;
+        width: 2em;
+        height: 2em;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        list-style-type:none;
+        
+    }
+}
+

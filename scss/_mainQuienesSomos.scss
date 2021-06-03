@@ -1,0 +1,41 @@
+.mainNosotros{
+    h3{
+        color: $titulos;
+        padding:20px;
+        font-size: 2em;
+        text-transform: uppercase;
+    }
+    
+}
+
+.mainNosotros__section1{
+    background-image: url(../imagenes/solitario.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x: center;
+    min-height: 500px;
+
+    p{
+        font-size: 1.3em;
+        line-height: 1em;
+        color: white;
+        text-shadow: 2px 2px 2px gray;
+    }
+}
+
+.mainNosotros__section3{
+     background-image: url(../imagenes/solitario2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x: center;
+    min-height: 500px;
+
+    p{
+         font-size: 1.3em;
+        line-height: 1em;
+        text-shadow: 2px 2px 4px white;
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,0.7693452380952381) 0%, rgba(255,255,255,0) 100%);
+
+    }
+}

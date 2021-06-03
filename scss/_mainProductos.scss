@@ -1,0 +1,83 @@
+
+.mainProd {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(250,240,227,1) 50%, rgba(255,255,255,1) 100%, rgba(247,230,207,1) 100%);
+
+    h3{
+        padding:20px;
+        color: $titulos;
+        
+    }
+    .mainProd__section{
+        margin: 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+        >div {
+            border: solid 2px lightgrey;
+            margin-top: 20px;
+            text-align: center;
+            flex-basis: 300px;
+            background-color: white;
+            &:hover{
+                transform: translate(10px, -10px);
+                box-shadow: 1px 1px 15px grey;
+                transition: all 0.1s;
+            }
+        }
+        
+        a{
+            display: block;
+            text-transform: uppercase;
+            font-weight: bolder;
+            border-bottom:solid 2px maroon;
+            text-decoration: none;
+        }
+        
+    
+    }
+}
+.mainProd__silla{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;   
+
+    div {
+        width: 300px;
+        height: 350px;
+        border: none;
+    }
+}
+@for $nn from 1 to 11{
+    .mainProd__silla{
+        .div#{$nn} {
+            background-image: url(../imagenes/silla#{$nn}.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: 50%;
+        }
+    }
+}
+.mainProd__pechera{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    div {
+        width: 300px;
+        height: 300px;
+        border: none;       
+    }
+}
+@for $nn from 1 to 11{
+    .mainProd__pechera{
+        .div#{$nn} {
+            background-image: url(../imagenes/pechera#{$nn}.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: 50%;
+        }
+    }
+}
+

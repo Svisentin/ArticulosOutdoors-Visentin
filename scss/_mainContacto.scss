@@ -1,0 +1,48 @@
+.mainContacto__titulos{
+     font-weight: bold;
+}
+
+.mainContacto__label{
+    font-weight: bold;
+    line-height: 1em;
+    padding: 10px;
+}
+.mainContacto__boton{
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background: rgb(21,79,0);
+    background: linear-gradient(180deg, rgba(21,79,0,1) 0%, rgba(66,122,63,1) 100%);
+    color: white;
+    border-radius: 5px;
+    &:hover{
+         background: rgb(21,79,0);
+        background: linear-gradient(0deg, rgba(21,79,0,1) 0%, rgb(130, 238, 124) 100%);
+
+    }
+}
+.mainContacto{
+    .mainHome__divDestacadas div:hover{
+        cursor: pointer;
+        transform: initial;
+        transition: initial; 
+    }
+}
+
+$animaciones: (
+    imgdes1:scale(1.1,1.1),
+    imgdes2:rotateX(360deg),
+     imgdes3:rotateY(360deg),
+      imgdes4:rotateX(360deg));
+
+@each $clase,$efecto in $animaciones{
+    .mainContacto{
+        .mainHome__divDestacadas{
+            .#{$clase}:hover{
+            transform: $efecto;
+            transition: transform 1s; 
+            } 
+        }
+    }
+    
+}

@@ -1,0 +1,60 @@
+.soloProductos__section{
+    padding: 2em;
+    height: 600px;
+   
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    div{
+        div{
+            background: rgba(255, 255, 255, 0.75);
+        }
+        div:hover{
+        background: transparent;
+        transition: 1s;
+            p{
+                display: none
+            }
+        } 
+    }
+} 
+.soloProductos__h3{
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px $titulos;
+    color: $titulos;
+    padding-bottom: 30px;
+    
+}
+.soloProductos__img{
+    background-image: url(../imagenes/presentacionSilla.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100%;
+}
+
+.soloProductos__img--pechera{
+    @extend.soloProductos__img;
+    background-image: url(../imagenes/presentacionPechera.jpg);
+}
+
+@media only screen and (max-width: 1200px) {
+    .soloProductos__section{
+       height: 500px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .soloProductos__section{
+       height: 400px;
+    }
+}    
+@media only screen and (max-width: 768px) {
+    .soloProductos__section{
+       height: 300px;
+    }
+}    
+@media only screen and (max-width: 576px) {
+    .soloProductos__section{
+       height: 250px;
+    }
+}       

@@ -1,0 +1,28 @@
+.body404{
+    background: lightgray;
+}
+.body404__error{
+    font-size: 4em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px grey; 
+}
+.body404__p1{
+    font-size: 2em;
+}
+.body404__p2{
+    text-align: end;
+    font-size: 1.5em;
+
+    a{
+        text-decoration: none;
+        color: green;
+        font-size: 2em;
+        text-transform: uppercase;
+        font-weight: bold;
+        &:hover{
+            cursor: pointer;
+            color: green;
+        }
+    }
+}
+            

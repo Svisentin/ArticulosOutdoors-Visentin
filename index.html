@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vive Outdoors te presenta todo el equipo outdoors que necesitas para tu proxima salida de treeking, kayak,playa o camping descubrelo aca">
+		<meta name="keywords" content="articulos de camping, outdoors, silla plegable, silla playera, equipo para montaña, kayak, equipamiento y articulos de montaña, treeking">
+    <link rel="icon" type="image/svg" href="imagenes/isologo.svg">
+    <!-- <meta name="author" content="Colocar Linkedin, pagina o red social"> CUANDO LA ACTUALICE -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <title>Vive outdoors - Articulos outdoors</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img src="imagenes/logoVive.png" alt="logo"  class="header__logo wow bounceInLeft"></a>
+        <h1 class="header__h1 wow bounceInRight ">Articulos outdoors</h1>
+        <nav class="header__menu navbar navbar-expand-lg navbar-light bg-light" id="menu">
+            <div class="header__div container d-flex justify-content-end">
+                <button class="header__boton navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="header__divChico collapse navbar-collapse" id="navbarSupportedContent" >
+                  <ul class="header__botonera navbar-nav m-auto mb-2 mb-lg-0 text-end">
+                    <li class="header__li nav-item">
+                      <a class="header__a " href="paginas/quienesSomos.html">Quienes somos</a>
+                    </li>
+                    <li class="header__li nav-item dropdown">
+                      <a class="header__a " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                      </a>
+                      <ul class="header__dropdown dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li class="header__li" ><a class="header__a dropdown-item" id="a__botonera" href="paginas/sillas.html">Sillas Plegables</a></li>
+                        <li class="header__li" ><a class="header__a dropdown-item" id="a__botonera" href="paginas/portas.html">Portas VHF</a></li>
+                      </ul>
+                    </li>
+                    <li class="header__li nav-item">
+                      <a class="header__a" href="paginas/ofertas.html" >Ofertas</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mainHome" >
+        <div id="carouselExampleFade" class="mainHome__carousel carousel slide " data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagenes/carru1.png" class="d-block w-100" alt="Fotografia de portada, parte del estampado de una silla">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/carru2.png" class="d-block w-100" alt="Fotografia de portada, parte del estampado de una silla">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/carru3.png" class="d-block w-100" alt="Fotografia de portada, parte del estampado de una silla">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h2 class="mainHome__h2 text-center p-4">Lo mejor del outdoors, lo tenés acá!</h2>
+        <article class="mainHome__destacadas wow bounceInUp container row m-auto">
+            <h3 class="mainHome__h3 py-3">DESTACADAS</h3>
+            <div class="mainHome__divDestacadas row m-auto ">
+              <div class="col-6 col-md-3 ">
+                <img src="imagenes/desta1.png" alt="Producto destacado Nº3" class="mainHome__imgDestacadas  w-100 p-2">
+              </div>
+              <div class="col-6 col-md-3 ">
+                <img src="imagenes/desta2.png" alt="Producto destacado Nº3" class="mainHome__imgDestacadas w-100 p-2">
+              </div>
+              <div class="col-6 col-md-3 ">
+                <img src="imagenes/desta3.png" alt="Producto destacado Nº3" class="mainHome__imgDestacadas w-100 p-2">
+              </div>
+              <div class="col-6 col-md-3 ">
+                <img src="imagenes/desta4.png" alt="Producto destacado Nº3" class="mainHome__imgDestacadas w-100 p-2">
+              </div>
+            </div>
+         
+        </article>
+        <div id="mainHome" class="mainHome__grid">
+          <article  class="mainHome__silla wow bounceInUp">
+              <!-- Descripcion de Silla-->
+              <h3 class="mainHome__h3">Silla plegable</h3>
+              <p class="mainHome__txt">Te presentamos nuestra silla plegable "Vive 80" especial para todas tus expediciones. Súper liviana, compacta y practica. Confeccionada en cordura importada ultra resistente e impermeable. Basta de gastar tiempo en buscar donde sentarte, nuestra silla es lo que te faltaba para darle comodidad a tu travesía. Ya sea en salidas a la montaña, a la playa, en salidas en kayak y a todos lados donde quieras. </p>    
+          </article>
+          <div class="mainHome__video wow bounceInUp" data-wow-delay=".01s" >
+              <video src="imagenes/parque.mp4" controls></video>
+          </div>
+          <article class="mainHome__pechera wow bounceInUp">
+            <!-- Descripcion de Pechera-->
+            <h3 class="mainHome__h3">Pechera porta radio</h3>
+            <p class="mainHome__txt">Como nos importa la comodidad en tus expediciones, no te podes quedar sin nuestra pechera "Vive ONE", esencial para llevar siempre al alcance de tu mano el VHF, con múltiples bolsillos que la hace practica para llevar todos tus materiales. Y un ajuste ergonomico para mayor confort y adherencia a tu cuerpo. Usada para montañismo, trabajos de altura y seguridad, entre otros. <br> Nuestra pechera es perfecta para trabajos donde necesitas tus manos libres y todos tus accesorios al alcance. </p>   
+          </article>
+          <div id="gridImgPechera" class="mainHome__imgPechera wow bounceInUp">
+            <img class="img-fluid w-100" src="imagenes/homepechera.png" alt="pechera de frente" class="pech">
+          </div>
+          <article class="mainHome__futuros wow bounceInUp"> 
+            <!-- Futuros proyectos-->
+            <h3 class="mainHome__h3">Conoce los futuros proyectos</h3>
+            <p class="mainHome__txt">Somos emprendedores con animo de crecimiento y por eso estamos continuamente en busca de nuevos productos livianos, prácticos y funcionales, así como la pechera y la silla, tenemos en mente muchos otros productos en fase avanzada de producción y que pronto dispondremos de ellos a la venta para que una ves mas los disfrutes en cada salida. Nuestros clientes son lo mas importante y gracias a ellos fuimos mejorando, próximamente vamos a contar con Riñoneras, Bolsa porta cuerdas, Polainas, Fundas de aislantes y muchos mas... No te olvides de seguirnos en nuestras redes para mas info día a día.
+            </p>   
+           </article>
+           <div id="gridImgFuturos" class="mainHome__imgFuturos wow bounceInUp">
+            <img src="imagenes/homeSobre.jpg" alt="Imagen de futuros productos, fundas de aislantes"  >
+          </div>  
+        </div>    
+        <p class="mainHome_frase fs-3 lh-base" >"Lo desconocido es desconocido. <br> Pero puede llevarte a contemplar la felicidad"</p>
+    </main>
+
+    <footer class="container-fluid m-auto footer row justify-content-center p-4 text-center text-md-start">
+        <div class="footer__div col-md-3 p-2">
+          <img class="footer__logo d-block m-auto p-4 " src="imagenes/logofooter.png" alt="logo de pie de pagina"  >
+        </div>
+        <div class="footer__div col-md-3 p-2" >
+            <p class="footer__tituFooter"><strong>CONTACTO</strong></p>
+            <p class="footer__info">Whats App +54-3487-309663</p>
+            <p class="footer__info">Av. siempreviva 123</p>
+            <p class="footer__info">LUN a VIE | 9 a 12 y/o de 15 a 18 </p>
+            <p class="footer__info">info@viveoutdoors.com</p>
+            <div class="footer__iconos">
+              <a href="https://www.facebook.com/vive.outdoor" target="_blank"><div class="facebook d-inline-block me-md-2 mx-2 "></div></a>
+              <a href="https://www.instagram.com/vive.outdoors/" target="_blank"><div class="instagram d-inline-block me-md-2 mx-2 "></div></a>
+              <div class="whatsapp d-inline-block me-md-2 mx-2 "></div>
+
+            </div>
+        </div>
+        <div class="footer__div col-md-3 p-2">
+            <p class="footer__tituFooter"> <strong>MEDIOS DE PAGO</strong> </p>
+            <p class="footer__info">Transferencia bancaria </p>
+            <p class="footer__info">Mercado Pago</p>
+            <img src="imagenes/mp.png" alt="Mercado Pago" class="footer__mp">
+        </div>  
+        <div class="footer__div col-md-3 p-2">
+            <p class="footer__tituFooter"><strong>CONSULTAS</strong></p>
+            <p class="footer__info">Click en el sobre </p>
+            <a class="footer__sobre w-100 m-auto" href="paginas/contacto.html">
+              <img class="d-md-block rounded " src="imagenes/iconsobre.png" alt="icono de consultas" >
+            </a>
+        </div>    
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>

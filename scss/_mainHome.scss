@@ -1,0 +1,233 @@
+.mainHome{
+        h2{
+            font-size: 1.3em;
+            background: black;
+            color: white;
+        }
+        .mainHome__h3{
+            text-transform: uppercase;
+            text-shadow: 1px 1px 2px $titulos;
+            color: $titulos;
+            padding-bottom: 30px;
+        }
+}
+
+.mainHome__txt {
+    color: $txtHome;
+    line-height: 2rem;
+    letter-spacing: 1PX;
+}
+.mainHome__destacadas{
+    padding-bottom: 1em;
+    h3 {
+        color: $titulos;
+        text-align: center;
+        font-size: 2em;
+    }
+    
+}
+.mainHome__divDestacadas div:hover{
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+    transition: transform 1s; 
+}
+
+
+/*--------------------GIRD HOME----------------------*/
+/*---------------------------------------------------*/
+
+.mainHome__grid{
+    display: grid;
+    grid-template-areas: 
+    "dos dos  tres tres"
+    "cuatro cuatro cinco cinco"
+    "seis seis siete siete";
+    grid-template-rows:repeat(3,minmax(500px,max-content ));
+    grid-row-gap: 100px;
+    justify-items: center;
+    align-items: center;
+}
+.mainHome__silla{
+    grid-area:dos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    p{
+        width: 80vh;
+        padding-left: 40px;
+    }
+    h3{
+        padding-left: 40px;
+    }
+}
+
+
+.mainHome__video{
+    grid-area:tres;
+
+    video{
+        height:400px;        
+    }
+}
+
+.mainHome__pechera{
+    grid-area:cinco;
+    background: #ffd7a2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;  
+    
+    p{
+        text-align: right;
+        width: 80%;
+        padding-right: 40px;
+    }
+    h3{
+        padding-top: 1em;
+        padding-right: 40px;
+    }
+}
+
+.mainHome__imgPechera{
+    grid-area:cuatro;
+    background: #ffd7a2;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.mainHome__futuros{
+    grid-area:seis;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    p{
+        width: 80vh;
+        padding-left: 40px;
+    }
+    h3{
+        padding-left: 40px;
+    }
+}
+
+.mainHome__imgFuturos{
+    background-color: burlywood;
+    grid-area:siete;
+
+    img{
+        height: 300px;
+         display: block;
+    }
+   
+}
+
+.mainHome_frase{
+    grid-area:ocho;
+    padding: 30px;
+    font-style: italic;
+    font-size: 1.2em;    
+    text-align: center;
+    line-height: 2em;
+}
+
+/*--------------------------- Media query ---------------------------*/
+
+@media only screen and (max-width: 992px){
+    body{
+        background-color:wheat;
+    }
+    .mainHome__grid{
+        display: grid;
+        grid-template-areas: 
+        "dos"
+        "tres"
+        "cuatro" 
+        "cinco" 
+        "seis" 
+         "siete";
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(3,minmax(500px,max-content ));
+        grid-row-gap: 0px;
+        justify-items: center;
+        align-items: center;
+    }
+    .mainHome__h3{
+        padding: 0;
+        display: block;
+        margin: auto;
+    }
+   
+    .mainHome__silla p{
+        padding: 1em;
+        width: 550px;
+        text-align: center;
+    }
+    .mainHome__imgPechera{
+        grid-area: cinco;
+        background: #ffd7a2;
+        height: 500px;
+
+        img{
+            height:initial ;
+            width: 300px;
+        }
+        
+    }
+
+    .mainHome__pechera{
+        grid-area: cuatro;
+        align-items:center;
+        justify-content: center; 
+        
+        p{
+            padding: 1em;
+            width: 550px;
+            text-align: center;
+        }
+    }
+    
+    .mainHome__futuros {
+        padding-top: 2em;
+
+        p{
+            padding: 1em;
+            width: 550px;
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width: 576px){
+    .mainHome h2{
+        font-size: 1em;
+    }
+    .mainHome__pechera p {
+        padding: 1em;
+        width: 300px;
+        text-align: center;
+    }
+    .mainHome__futuros p{
+        margin: auto;
+        padding: 1em;
+        width: 300px;
+        text-align: center;
+    }
+    .mainHome__silla p{
+        padding: 1em;
+        width: 300px;
+        text-align: center;
+    }
+    .mainHome__h3{
+        padding: 1em;
+        margin: auto;
+        text-align: center;
+    }
+} 
+
