@@ -725,18 +725,6 @@ a {
       cursor: pointer;
       color: green; }
 
-.mainFucsia__h3 {
-  text-transform: uppercase;
-  text-shadow: 1px 1px 2px #a52a2a;
-  color: #a52a2a;
-  padding-bottom: 30px; }
-
-.mainFucsia__section {
-  padding: 2em; }
-
-.mainFucsia__imgs img {
-  max-width: 300px; }
-
 .colores span {
   display: inline-block;
   margin-left: 5px;
@@ -769,19 +757,3 @@ a {
 
 .boton-lisa:hover {
   background: linear-gradient(to top, #646363, #030303); }
-
-@media only screen and (max-width: 1200px) {
-  .soloProductos__section {
-    height: 500px; } }
-
-@media only screen and (max-width: 992px) {
-  .soloProductos__section {
-    height: 400px; } }
-
-@media only screen and (max-width: 768px) {
-  .soloProductos__section {
-    height: 300px; } }
-
-@media only screen and (max-width: 576px) {
-  .soloProductos__section {
-    height: 250px; } }

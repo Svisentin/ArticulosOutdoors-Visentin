@@ -1,0 +1,42 @@
+
+
+
+.colores span {
+	display:inline-block;
+	margin-left: 5px;
+	width: 20px;
+	height: 20px;
+}
+.colores span:first-child{
+	background: rgb(0, 0, 0);
+
+}
+.colores span:nth-child(2){
+	background: red;
+	
+}.colores span:nth-child(3){
+	background: violet;
+	
+}.colores span:nth-child(4){
+	background: blue;
+	
+}
+.colores span:last-child{
+	background: green;
+}
+.boton-lisa {
+	padding: 20px;
+	margin: 20px 0;
+	border-radius: 10px;
+	background: linear-gradient(to top,rgb(146, 1, 1), #bb4141 ,);
+	font-weight: bold;
+    color: white;
+    font-weight: bold;
+
+}
+
+.boton-lisa:hover{
+	background: linear-gradient(to top, rgb(100, 99, 99) ,rgb(3, 3, 3));
+}
+
+
