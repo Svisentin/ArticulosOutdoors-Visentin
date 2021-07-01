@@ -1,7 +1,7 @@
 .header{
     width: 100%;
-    background:rgb(51, 50, 50);
-
+    background:rgb(26, 25, 25);
+  
     .header__logo  {
         padding-top: 20px;
         width: 30%;
@@ -11,7 +11,7 @@
     h1 {
     font-size: 1.5em;
     padding: 10px 20px;
-    color:$tituloLogo;
+    color:$tituloLogo; 
     text-align: center;
     text-shadow: 1px 1px 3px $tituloLogo;
     }
@@ -20,7 +20,7 @@
         background: linear-gradient(180deg,rgba(255,215,162,1)  0%, rgba(125,105,79,1) 100%);
         margin:auto;
             li{
-                padding: 15px 10px;
+                padding: 5px 10px;
                 transition: background-color 0.7s;
                 &:hover{
                     background-color: rgba(148, 147, 148, 0.397);
@@ -34,13 +34,16 @@
                 text-shadow: 1px 1px 3px lightblue;
                 font-weight: bold;
                 padding: 10px;
+                font-family: "open sans";
+                text-transform: uppercase;
                 &:hover{
                     color: $txtMenu;  
                 }
             }
             
         .header__dropdown{
-            background-color: #ffd7a275;
+            background: rgb(125,105,79);
+            background: linear-gradient(180deg,rgba(255,215,162,1)  0%, rgba(125,105,79,1) 100%);
             li{
                 a:hover{
                     background-color: initial;

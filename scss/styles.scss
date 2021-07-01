@@ -6,6 +6,9 @@ $verdeOscuro: #1b4e10;
 $titulos: #a52a2a;
 $tituloLogo:#70d26b;
 $orange: #ffd7a2;
+.fuente{
+    font-family: "open Sans"
+}
 
 
 @import "_reset";
@@ -19,3 +22,5 @@ $orange: #ffd7a2;
 @import "_soloProductos";
 @import "_404";
 @import "_sFucsia";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+

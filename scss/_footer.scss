@@ -1,12 +1,13 @@
 .footer  {
     color: white;
-    background:rgba(0, 0, 0, 0.8);
-
+    background:rgb(26, 25, 25);
+    
     .footer__logo{
          width: 10em;
     }
     .footer__tituFooter{
         text-shadow: 1px 1px 2px white;
+        font-family: "open sans";
     }
     .footer__mp{
         width: 150px;
@@ -14,7 +15,7 @@
         border-radius: 5px;
         margin-top: 10px;
     }
-    .footer__sobre{
+    .footer__sobre{ 
         img{
             width: 6em;
             padding: 1px 10px;

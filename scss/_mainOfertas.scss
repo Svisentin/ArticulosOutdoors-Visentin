@@ -85,6 +85,9 @@
 
 /* -----------cajas de Producto----------- */
 .mainOfertas__prod--1{
+    p{
+        margin-bottom: 5px;
+    }
     place-self: center center ;
     grid-area: productos; 
     text-align: center;
@@ -103,6 +106,9 @@
 }
 
 .mainOfertas__prod--2{
+    p{
+        margin-bottom: 5px;
+    }
     place-self: center center ;
      grid-area: productos2;
      text-align: center;

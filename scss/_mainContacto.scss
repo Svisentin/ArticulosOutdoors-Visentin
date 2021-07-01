@@ -1,5 +1,8 @@
 .mainContacto__titulos{
      font-weight: bold;
+     margin-bottom: 0px;
+     text-shadow: 1px 1px 2px black;
+     font-size: 1.1em;
 }
 
 .mainContacto__label{
@@ -8,16 +11,17 @@
     padding: 10px;
 }
 .mainContacto__boton{
-    width: 100%;
+    float: right;
+    width: 50%;
     margin-top: 5px;
     padding: 5px 10px;
-    background: rgb(21,79,0);
-    background: linear-gradient(180deg, rgba(21,79,0,1) 0%, rgba(66,122,63,1) 100%);
+    background: rgb(56, 97, 211);
+    background: linear-gradient(180deg, rgba(56, 97, 211,1) 0%, rgb(97, 128, 212) 100%);
     color: white;
     border-radius: 5px;
     &:hover{
-         background: rgb(21,79,0);
-        background: linear-gradient(0deg, rgba(21,79,0,1) 0%, rgb(130, 238, 124) 100%);
+        background: rgb(56, 97, 211);
+        background: linear-gradient(0deg, rgba(56, 97, 211,1) 0%, rgb(97, 128, 212) 100%);
 
     }
 }
@@ -26,6 +30,13 @@
         cursor: pointer;
         transform: initial;
         transition: initial; 
+    }
+    .mainContacto__divContacto{
+        background-image: url(../imagenes/copos.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        
+       
     }
 }
 
